@@ -4,7 +4,9 @@
   "description": "A simple proxy gateway to forward to services",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" ",
+    "lint": "eslint . "
   },
   "author": "DhamoSG",
   "license": "ISC",
@@ -12,5 +14,8 @@
     "config": "^3.3.9",
     "express": "^4.18.2",
     "express-http-proxy": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0"
   }
 }
