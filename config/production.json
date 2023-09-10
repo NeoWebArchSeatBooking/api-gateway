@@ -1,0 +1,13 @@
+{
+    "app":{
+        "routes":{
+            "idp" : "http://idp-service",
+            "facilities" : "http://seat-management-svc",
+            "preferences" : "http://seat-management-svc",
+            "booking" : "http://seat-management-svc"
+        },
+        "auth": {
+            "endpoint": "http://idp-service/v1/idp/status"
+        }
+    }
+}
