@@ -41,7 +41,7 @@ spec:
     spec:
       containers:
         - name: api-gateway-container
-          image: dhamodaran/api_gateway:test
+          image: dhamodaran/api_gateway:latest
           imagePullPolicy: Always
           resources:
             limits:
