@@ -10,7 +10,7 @@ console.log(config.get("app.routes.booking"))
 app.all('/v1/idp/**',proxy(config.get("app.routes.idp"),{proxyErrorHandler}))
 app.all('/v1/api-docs/', proxy(config.get("app.routes.booking"),{proxyErrorHandler}))
 app.all('/v1/facilities**', auth, proxy(config.get("app.routes.booking"),{proxyErrorHandler}))
-app.all('/v1/preferences', auth, proxy(config.get("app.routes.preferences"),{proxyErrorHandler}))
+app.all('/v1/preferences**', auth, proxy(config.get("app.routes.preferences"),{proxyErrorHandler}))
 app.all('/v1/booking/**', auth, proxy(config.get("app.routes.booking"),{proxyErrorHandler}))
 
 const port = process.env.PORT || 4500;
